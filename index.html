@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Study Material | Vesus Studio</title>
+</head>
+
+<body>
+    <div class="ppop">
+        <div class="popup" id="popup">
+            <div class="message">
+                <p id="msgText">
+                    Sorry to say that, but we are currently under development. Please come back later!
+                </p>
+                <i class="far fa-times-circle closePopup" id="close-btn"></i>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo-img">
+                <a href="index.html"><img src="./images/logo.png" alt="Vesus Studio Logo" /></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-bar">
+                <i class="fa-solid fa-bars-staggered" id="navBtn"></i>
+            </label>
+            <ul id="sideMenu">
+                <li><a href="index.html#home"><i class="fas fa-house"></i> Home</a></li>
+                <li><a href="index.html#content"><i class="fas fa-file-video"></i> Content</a></li>
+                <li><a href="index.html#contact"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li><a href="index.html#about" onclick="popupMsg()"><i class="fas fa-address-card"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div class="container-content">
+                <div class="upper curved">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                        <path fill="#81689D" fill-opacity="1"
+                            d="M0,224L30,229.3C60,235,120,245,180,234.7C240,224,300,192,360,197.3C420,203,480,245,540,256C600,267,660,245,720,218.7C780,192,840,160,900,170.7C960,181,1020,235,1080,245.3C1140,256,1200,224,1260,186.7C1320,149,1380,107,1410,85.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="cont">
+                    <h2>Welcome to Versus Studio!</h2>
+                    <p>This is a website dedicated to study material videos about web development, C language and many
+                        more.</p>
+                    <a href="#content" class="button">View Content</a>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                    <path fill="#f5f3f3" fill-opacity="1"
+                        d="M0,224L30,224C60,224,120,224,180,197.3C240,171,300,117,360,101.3C420,85,480,107,540,133.3C600,160,660,192,720,208C780,224,840,224,900,192C960,160,1020,96,1080,96C1140,96,1200,160,1260,170.7C1320,181,1380,139,1410,117.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+        <section id="content" class="content">
+            <div class="select-cat" id="select-cat">
+                <form action="#" method="post" name="form">
+                    <label for="categorySelect">Choose Language of Content:</label>
+                    <select name="categorySelection" id="categorySelect">
+                        <option value="">Select Language</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                    <!-- <span class="alert-mesg"> <-- Functioning coming soon....</span> -->
+                    <span class="alert-mesg"><--Functioning in Beta Mode</span>
+                </form>
+            </div>
+            <div class="cat-button" id="cat-button">
+                <!-- <div class="alert-msg">
+                    <span>Please! Click Double times on button</span>
+                </div> -->
+                <div class="buttons">
+                    <h2 class="select-content">Select your Content Taste</h2>
+                    <div class="button-group">
+                        <button class="btns" id="single-vids">Single Video</button>
+                        <button class="btns" id="playlist-vids" onclick="popupMsg()">Playlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-selection" id="cont-selection">
+                <!-- Data will Show with the help of javascript -->
+            </div>
+            <div class="single-videos" id="single-video">
+                <!-- Data will Show with the help of javascript -->
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="social-links">
+            <h3>Social Links:</h3>
+            <a class="github" href="index.html#github"><i class="fab fa-github"></i> Github</a>
+            <a class="instagram" href="index.html#instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <div class="copyright">
+            <p>
+                All copyrights are reserved by Versus-Studio
+            </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/videosShow.js"></script>
+</body>
+
+</html>
