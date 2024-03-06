@@ -694,6 +694,31 @@ footer .copyright p {
     }
 }
 
+@media (max-width:390px) {
+
+    .content .video-container>iframe,
+    .content .category .video-container {
+        width: 340px;
+    }
+
+    .content .heading-text .otherlang {
+        font-size: 55px;
+    }
+
+    .content .heading-text h2 {
+        font-size: 55px;
+    }
+    
+    footer{
+        height: fit-content;
+    }
+
+    footer .social-links>h3,
+    footer .social-links>a {
+        font-size: 16px;
+    }
+}
+
 @media (max-width:360px) {
 
     .content .video-container>iframe,
