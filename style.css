@@ -621,6 +621,11 @@ footer .copyright p {
 }
 
 @media (max-width:500px) {
+    body, html{
+        height: fit-content !important;
+        overflow-x: hidden !important;
+    }
+
     header nav ul {
         top: 80px;
         left: -100%;
