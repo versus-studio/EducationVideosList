@@ -23,8 +23,12 @@ form.onchange = function (e) {
                </div>
                <hr class="lineButton">
                <div class="content-type two" id="main-content-type"></div>`;
-         document.getElementById("others").addEventListener("click", showOtherLanguagesContent);
-         document.getElementById("webdev").addEventListener("click", showWebDevContent);
+               const others =  document.getElementById("others");
+               others.addEventListener("click", showOtherLanguagesContent);
+               others.scrollIntoView();
+               const webdev = document.getElementById("webdev");
+               webdev.addEventListener("click", showWebDevContent);
+               webdev.scrollIntoView();
       } else {
          contSelection.innerHTML = "";
          videoContainer.style.display = "none";
@@ -38,8 +42,15 @@ form.onchange = function (e) {
       ).innerHTML = `<button class="btns" id="frontend">Front-End Developement</button>
           <button class="btns" id="backend" onclick="popupMsg()">Back-End Development</button>`;
       videoContainer.style.display = "none";
-      document.getElementById("frontend").addEventListener("click", showFrontendContent);
-      document.getElementById("backend").addEventListener("click", popupMsg);
+       const frontend = document.getElementById("frontend");
+       frontend.addEventListener("click", showFrontendContent);
+       frontend.scrollIntoView();
+       const videoCat = document.getElementById("video-cat");
+       videoCat.scrollIntoView();
+       
+      const backend = document.getElementById("backend");
+      backend.addEventListener("click", popupMsg);
+      backend.scrollIntoView();
    }
 
 
@@ -47,7 +58,7 @@ form.onchange = function (e) {
       catButtons.style.display = "block";
       videoContainer.style.display = "none";
       contSelection.innerHTML = "";
-      console.log("English");
+    //   console.log("English");
 
       function showOtherLanguagesContent() {
          document.getElementById("main-content-type").innerHTML = "";
@@ -55,8 +66,8 @@ form.onchange = function (e) {
          videoContainer.innerHTML = `<div class="note">
               <h3>These all videos are available only in <span>English Language</span></h3>
             </div>
-            <div class="video-cat">
-                <div class="category show" id="python-cat">
+            <div class="video-cat" id="video-cat">
+                <div class="category show" id="other-cat">
                     <div class="heading-text">
                         <h2 class="otherlang">Other Languages</h2>
                     </div>
