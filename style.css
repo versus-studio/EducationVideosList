@@ -694,7 +694,7 @@ footer .copyright p {
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:400px) {
 
     .content .video-container>iframe,
     .content .category .video-container {
