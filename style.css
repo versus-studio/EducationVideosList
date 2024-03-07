@@ -621,7 +621,7 @@ footer .copyright p {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     body, html{
         width: 100%;
         height: fit-content !important;
