@@ -17,21 +17,27 @@ form.onchange = function (e) {
     if (isContentVisible || opt === "english" || opt === "hindi") {
       videoContainer.style.display = "none";
       contSelection.innerHTML = `<div class="content-type" id="content-type">
-                    <button class="btns" onclick="popupMsg()" id="uiux">UI/UX Design</button>
+                    <button class="btns" id="uiux">UI/UX Design</button>
                     <button class="btns" id="webdev">Web Development</button>
                     <button class="btns" id="others">Other Languages</button>
                     <button class="btns" id="appscript">App-Script (Google Sheets)</button>
                </div>
                <hr class="lineButton">
                <div class="content-type two" id="main-content-type"></div>`;
-      const googleSheets = document.getElementById("appscript");
-      googleSheets.addEventListener("click", showGoogleSheetsContent);
-      const others = document.getElementById("others");
-      others.addEventListener("click", showOtherLanguagesContent);
-      others.scrollIntoView();
+      const uiux = document.getElementById("uiux");
+      uiux.addEventListener("click", showUiuxContent);
+      uiux.scrollIntoView();
+
       const webdev = document.getElementById("webdev");
       webdev.addEventListener("click", showWebDevContent);
       webdev.scrollIntoView();
+
+      const others = document.getElementById("others");
+      others.addEventListener("click", showOtherLanguagesContent);
+      others.scrollIntoView();
+
+      const googleSheets = document.getElementById("appscript");
+      googleSheets.addEventListener("click", showGoogleSheetsContent);
     } else {
       contSelection.innerHTML = "";
       videoContainer.style.display = "none";
@@ -61,6 +67,34 @@ form.onchange = function (e) {
     videoContainer.style.display = "none";
     contSelection.innerHTML = "";
     //   console.log("English");
+
+    function showUiuxContent() {
+      document.getElementById("main-content-type").innerHTML = "";
+      videoContainer.style.display = "block";
+      videoContainer.innerHTML = `<div class="note">
+              <h3>These all videos are available only in <span>English Language</span></h3>
+            </div>
+            <div class="video-cat" id="video-cat">
+                <div class="category show" id="uiuxDesignEng">
+                    <div class="heading-text">
+                        <h2 class="uiux">UI/UX Design</h2>
+                    </div>
+                    <hr>
+                    <div class="video-content-cont">
+                        <div class="video-container">
+                            <div class="video-category">
+                                <h2>Appscript Language</h2>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BU_afT-aIn0?si=z2zSVuOHHjuGkWO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="video-title">
+                                <h3>C Language Beginner to Professional by <a class="credits" href="https://www.youtube.com/@intellipaat" target="_blank">Intellipaat</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+    }
 
     function showGoogleSheetsContent() {
       document.getElementById("main-content-type").innerHTML = "";
@@ -312,13 +346,40 @@ form.onchange = function (e) {
     catButtons.style.display = "block";
     videoContainer.style.display = "none";
     contSelection.innerHTML = "";
-    console.log("Hindi");
+    // console.log("Hindi");
+
+    function showUiuxContent() {
+        document.getElementById("main-content-type").innerHTML = "";
+        videoContainer.style.display = "block";
+        videoContainer.innerHTML = `<div class="note">
+                <h3>These all videos are available only in <span>Hindi Language</span></h3>
+              </div>
+              <div class="video-cat" id="video-cat">
+                  <div class="category show" id="uiuxDesignEng">
+                      <div class="heading-text">
+                          <h2 class="uiux">UI/UX Design</h2>
+                      </div>
+                      <hr>
+                      <div class="video-content-cont">
+                          <div class="video-container extraspace">
+                              <div class="video-category">
+                                  <h2>Appscript Language</h2>
+                              </div>
+                              <div class="coming-up-text">
+                                <h2>Video Not Available In Hindi Currently. <br>Please, Come Back Later!</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              `;
+      }
 
     function showGoogleSheetsContent() {
       document.getElementById("main-content-type").innerHTML = "";
       videoContainer.style.display = "block";
       videoContainer.innerHTML = `<div class="note">
-                <h3>These all videos are available only in <span>English Language</span></h3>
+                <h3>These all videos are available only in <span>Hindi Language</span></h3>
               </div>
               <div class="video-cat" id="video-cat">
                   <div class="category show" id="googleScriptHindi">
@@ -327,12 +388,12 @@ form.onchange = function (e) {
                       </div>
                       <hr>
                       <div class="video-content-cont">
-                          <div class="video-container googleScript">
+                          <div class="video-container extraspace">
                               <div class="video-category">
                                   <h2>Appscript Language</h2>
                               </div>
                               <div class="coming-up-text">
-                                <h2>Video Not Available In Hindi Currently</h2>
+                                <h2>Video Not Available In Hindi Currently. <br>Please, Come Back Later!</h2>
                               </div>
                           </div>
                       </div>

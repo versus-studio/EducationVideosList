@@ -420,7 +420,7 @@ main {
     transition: 0.2s ease;
 }
 
-.content .category .googleScript{
+.content .category .extraspace{
     padding: 0 10px;
 }
 
@@ -431,7 +431,7 @@ main {
     background-color: var(--header-footer-bg);
     color: var(--common-text-color);
     width: 100%;
-    height: 100px;
+    height: auto;
     padding: 0 100px;
     border-radius: 10px;
     font-family: "Protest Guerrilla", sans-serif;
