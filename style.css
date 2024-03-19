@@ -431,6 +431,7 @@ main {
     background-color: var(--header-footer-bg);
     color: var(--common-text-color);
     width: 100%;
+    min-height: 100px;
     height: auto;
     padding: 0 100px;
     border-radius: 10px;
