@@ -94,10 +94,15 @@ body {
     margin: 0;
 }
 
+#click {
+    display: none;
+}
+
 header {
     display: flex;
     top: 0;
-    position: sticky !important;
+    position: fixed;
+    /* position: sticky !important; */
     justify-content: center;
     align-items: center;
     height: 80px;
@@ -108,9 +113,6 @@ header {
     box-shadow: 2px 2px 35px var(--svg-color);
 }
 
-#click {
-    display: none;
-}
 
 header .menu-bar {
     font-size: 30px;
@@ -186,7 +188,6 @@ header nav ul li a::after {
     background-color: var(--svg-color);
     transition: 0.3s all;
 }
-
 
 header nav ul li a:hover {
     color: var(--svg-color);
@@ -584,12 +585,12 @@ footer .copyright p {
     }
 
     #click:checked~ul {
-        left: 0%;
+        right: 0%;
     }
 
     header nav ul {
         top: 80px;
-        left: -100%;
+        right: -100%;
         position: fixed;
         display: block;
         background-color: var(--primary-text);
@@ -629,15 +630,7 @@ footer .copyright p {
     }
 
     header nav ul {
-        top: 80px;
-        left: -100%;
-        position: fixed;
-        display: block;
-        background-color: var(--primary-text);
         width: 45%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s all ease-in-out;
     }
 
     header nav ul li {
