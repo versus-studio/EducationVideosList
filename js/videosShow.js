@@ -69,9 +69,9 @@ form.onchange = function (e) {
               <h3>These all videos are available only in <span>English Language</span></h3>
             </div>
             <div class="video-cat" id="video-cat">
-                <div class="category show" id="other-cat">
+                <div class="category show" id="googleScriptEng">
                     <div class="heading-text">
-                        <h2 class="otherlang">Google Sheets</h2>
+                        <h2 class="googleLang">Google Sheets</h2>
                     </div>
                     <hr>
                     <div class="video-content-cont">
@@ -98,7 +98,7 @@ form.onchange = function (e) {
               <h3>These all videos are available only in <span>English Language</span></h3>
             </div>
             <div class="video-cat" id="video-cat">
-                <div class="category show" id="other-cat">
+                <div class="category show" id="otherCatEng">
                     <div class="heading-text">
                         <h2 class="otherlang">Other Languages</h2>
                     </div>
@@ -193,7 +193,7 @@ form.onchange = function (e) {
               <h3>These all videos are available only in <span>English Language</span></h3>
             </div>
             <div class="video-cat">
-                <div class="category show" id="web-dev-cat">
+                <div class="category show" id="webDevCatEng">
                     <div class="heading-text">
                         <h2>Front-End Development</h2>
                     </div>
@@ -315,33 +315,31 @@ form.onchange = function (e) {
     console.log("Hindi");
 
     function showGoogleSheetsContent() {
-        document.getElementById("main-content-type").innerHTML = "";
-        videoContainer.style.display = "block";
-        videoContainer.innerHTML = `<div class="note">
+      document.getElementById("main-content-type").innerHTML = "";
+      videoContainer.style.display = "block";
+      videoContainer.innerHTML = `<div class="note">
                 <h3>These all videos are available only in <span>English Language</span></h3>
               </div>
               <div class="video-cat" id="video-cat">
-                  <div class="category show" id="other-cat">
+                  <div class="category show" id="googleScriptHindi">
                       <div class="heading-text">
-                          <h2 class="otherlang">Google Sheets</h2>
+                          <h2 class="googleLang">Google Sheets</h2>
                       </div>
                       <hr>
                       <div class="video-content-cont">
-                          <div class="video-container">
+                          <div class="video-container googleScript">
                               <div class="video-category">
                                   <h2>Appscript Language</h2>
                               </div>
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ZSCwfggOKka14hTo&amp;list=PLv9Pf9aNgemv62NNC5bXLR0CzeaIj5bcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                              <div class="video-title">
-                                  <h3>C Language Beginner to Professional by <a class="credits" href="https://www.youtube.com/@excelGoogleSheets" target="_blank">Learn Google Sheets & Excel Spreadsheets</a></h3>
-                                  <h3><a class="credits" href="https://www.youtube.com/playlist?list=PLv9Pf9aNgemv62NNC5bXLR0CzeaIj5bcw">Full Playlist Check from Here</a></h3>
+                              <div class="coming-up-text">
+                                <h2>Video Not Available In Hindi Currently</h2>
                               </div>
                           </div>
                       </div>
                   </div>
               </div>
               `;
-      }
+    }
 
     function showOtherLanguagesContent() {
       document.getElementById("main-content-type").innerHTML = "";
@@ -350,7 +348,7 @@ form.onchange = function (e) {
                 <h3>These all videos are available only in <span>Hindi Language</span></h3>
               </div>
               <div class="video-cat">
-                  <div class="category show" id="python-cat">
+                  <div class="category show" id="pythonCatHindi">
                       <div class="heading-text">
                           <h2 class="otherlang">Other Languages</h2>
                       </div>
@@ -404,7 +402,7 @@ form.onchange = function (e) {
                 <h3>These all videos are available only in <span>Hindi Language</span></h3>
               </div>
               <div class="video-cat">
-                  <div class="category show" id="web-dev-cat">
+                  <div class="category show" id="webDevCatHindi">
                       <div class="heading-text">
                           <h2>Front-End Development</h2>
                       </div>

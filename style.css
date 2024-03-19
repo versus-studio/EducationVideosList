@@ -420,6 +420,10 @@ main {
     transition: 0.2s ease;
 }
 
+.content .category .googleScript{
+    padding: 0 10px;
+}
+
 .content .video-container .coming-up-text>h2 {
     display: flex;
     justify-content: center;
@@ -434,7 +438,7 @@ main {
 }
 
 .content .video-container>iframe:hover {
-    transform: skewY(-4deg);
+    /* transform: skewY(-4deg); */
     cursor: pointer;
 }
 
@@ -623,7 +627,9 @@ footer .copyright p {
 }
 
 @media (max-width:600px) {
-    body, html{
+
+    body,
+    html {
         width: 100%;
         height: fit-content !important;
         overflow-x: hidden !important;
@@ -689,7 +695,7 @@ footer .copyright p {
     }
 }
 
-@media (max-width:400px) and (orientation: portrait){
+@media (max-width:400px) and (orientation: portrait) {
 
     .content .video-container>iframe,
     .content .category .video-container {
@@ -703,8 +709,8 @@ footer .copyright p {
     .content .heading-text h2 {
         font-size: 55px;
     }
-    
-    footer{
+
+    footer {
         height: fit-content;
     }
 
@@ -728,8 +734,8 @@ footer .copyright p {
     .content .heading-text h2 {
         font-size: 45px;
     }
-    
-    footer{
+
+    footer {
         height: fit-content;
     }
 
