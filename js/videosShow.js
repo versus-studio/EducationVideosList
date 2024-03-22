@@ -108,25 +108,26 @@ form.onchange = function (e) {
                                 <h3>Adobe Xd UX Design For Beginners by <a class="credits" href="https://www.youtube.com/@BringYourOwnLaptop" target="_blank">Bring Your Own Laptop</a></h3>
                             </div>
                         </div>
-                        <div class="video-container">
-                          <div class="video-category">
-                              <h2>Figma UI/UX Design</h2>
-                          </div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/cKZEgtQUxlU?si=XoxwDgvAuwjdj4Wq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          <div class="video-title">
-                                <h3>Figma UI/UX Design Course For Beginners by <a class="credits" href="https://www.youtube.com/@ZeroToMastery" target="_blank">Zero To Mastery</a></h3>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                          <div class="video-category">
-                              <h2>Figma UX Design</h2>
-                          </div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/kbZejnPXyLM?si=n6_TUZbjv_UTEXgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          <div class="video-title">
-                                <h3>Figma UX Design UI Essentials Course <br> For Beginners by <a class="credits" href="https://www.youtube.com/@BringYourOwnLaptop" target="_blank">Bring Your Own Laptop</a></h3>
-                            </div>
-                        </div>
-
+                    </div>
+                    <div class="video-content-cont">
+                    <div class="video-container">
+                    <div class="video-category">
+                        <h2>Figma UI/UX Design</h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cKZEgtQUxlU?si=XoxwDgvAuwjdj4Wq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-title">
+                          <h3>Figma UI/UX Design Course For Beginners by <a class="credits" href="https://www.youtube.com/@ZeroToMastery" target="_blank">Zero To Mastery</a></h3>
+                      </div>
+                  </div>
+                  <div class="video-container">
+                    <div class="video-category">
+                        <h2>Figma UX Design</h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kbZejnPXyLM?si=n6_TUZbjv_UTEXgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-title">
+                          <h3>Figma UX Design UI Essentials Course <br> For Beginners by <a class="credits" href="https://www.youtube.com/@BringYourOwnLaptop" target="_blank">Bring Your Own Laptop</a></h3>
+                      </div>
+                  </div>
                     </div>
                 </div>
             </div>`;
