@@ -83,17 +83,53 @@ form.onchange = function (e) {
                     <div class="video-content-cont">
                         <div class="video-container">
                             <div class="video-category">
-                                <h2>UI/UX Design</h2>
+                                <h2>Figma Introduction</h2>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bI6q16ffdgQ?si=GbWq04RJGqCo4Uwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-title">
+                                <h3>Foundation Of Figma <br> For Beginner to Professional by <a class="credits" href="https://www.youtube.com/@AnshMehraa" target="_blank">Ansh Mehra</a></h3>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-category">
+                                <h2>Adobe Xd UI/UX Design</h2>
                             </div>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/BU_afT-aIn0?si=z2zSVuOHHjuGkWO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <div class="video-title">
-                                <h3>C Language Beginner to Professional by <a class="credits" href="https://www.youtube.com/@intellipaat" target="_blank">Intellipaat</a></h3>
+                                <h3>Adobe Xd UI/UX Design Course <br> For Beginner to Professional by <a class="credits" href="https://www.youtube.com/@intellipaat" target="_blank">Intellipaat</a></h3>
                             </div>
                         </div>
+                        <div class="video-container">
+                            <div class="video-category">
+                                  <h2>Adobe Xd UX Design</h2>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f2K1jmjj5pM?si=YJs5dULo2tdXJ8U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-title">
+                                <h3>Adobe Xd UX Design For Beginners by <a class="credits" href="https://www.youtube.com/@BringYourOwnLaptop" target="_blank">Bring Your Own Laptop</a></h3>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                          <div class="video-category">
+                              <h2>Figma UI/UX Design</h2>
+                          </div>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/cKZEgtQUxlU?si=XoxwDgvAuwjdj4Wq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="video-title">
+                                <h3>Figma UI/UX Design Course For Beginners by <a class="credits" href="https://www.youtube.com/@ZeroToMastery" target="_blank">Zero To Mastery</a></h3>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                          <div class="video-category">
+                              <h2>Figma UX Design</h2>
+                          </div>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/kbZejnPXyLM?si=n6_TUZbjv_UTEXgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="video-title">
+                                <h3>Figma UX Design UI Essentials Course <br> For Beginners by <a class="credits" href="https://www.youtube.com/@BringYourOwnLaptop" target="_blank">Bring Your Own Laptop</a></h3>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            `;
+            </div>`;
     }
 
     function showGoogleSheetsContent() {
@@ -121,8 +157,7 @@ form.onchange = function (e) {
                         </div>
                     </div>
                 </div>
-            </div>
-            `;
+            </div>`;
     }
 
     function showOtherLanguagesContent() {
@@ -217,8 +252,7 @@ form.onchange = function (e) {
                         </div>
                     </div>
                 </div>
-            </div>
-            `;
+            </div>`;
     }
 
     function showFrontendContent() {
@@ -349,9 +383,9 @@ form.onchange = function (e) {
     // console.log("Hindi");
 
     function showUiuxContent() {
-        document.getElementById("main-content-type").innerHTML = "";
-        videoContainer.style.display = "block";
-        videoContainer.innerHTML = `<div class="note">
+      document.getElementById("main-content-type").innerHTML = "";
+      videoContainer.style.display = "block";
+      videoContainer.innerHTML = `<div class="note">
                 <h3>These all videos are available only in <span>Hindi Language</span></h3>
               </div>
               <div class="video-cat" id="video-cat">
@@ -361,19 +395,28 @@ form.onchange = function (e) {
                       </div>
                       <hr>
                       <div class="video-content-cont">
-                          <div class="video-container extraspace">
-                              <div class="video-category">
-                                  <h2>Appscript Language</h2>
-                              </div>
-                              <div class="coming-up-text">
-                                <h2>Video Not Available In Hindi Currently. <br>Please, Come Back Later!</h2>
-                              </div>
-                          </div>
+                            <div class="video-container">
+                                <div class="video-category">
+                                    <h2>Adobe Xd UI/UX Design</h2>
+                                </div>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/ddQHFKVrCkU?si=FPiyV_VNhUOWpIgP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="video-title">
+                                    <h3>Adobe UI/UX Design For Beginners by <a  class="credits" href="https://www.youtube.com/@wscubetech" target="_blank">WsCube Tech</a></h3>
+                                </div>
+                            </div>
+                            <div div class="video-container">
+                                <div class="video-category">
+                                    <h2>Full UI/UX Design</h2>
+                                </div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/e_dv7GBHka8?si=Pfmct7Ox1p3GSLgK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="video-title">
+                                    <h3>Full UI/UX Design Course For Beginners by <a class="credits" href="https://www.youtube.com/@LetsUncover" target="_blank">Lets Uncover</a></h3>
+                                </div>
+                            </div>
                       </div>
                   </div>
-              </div>
-              `;
-      }
+              </div>`;
+    }
 
     function showGoogleSheetsContent() {
       document.getElementById("main-content-type").innerHTML = "";
@@ -388,7 +431,7 @@ form.onchange = function (e) {
                       </div>
                       <hr>
                       <div class="video-content-cont">
-                          <div class="video-container extraspace">
+                          <div class="video-container ">
                               <div class="video-category">
                                   <h2>Appscript Language</h2>
                               </div>
@@ -398,8 +441,7 @@ form.onchange = function (e) {
                           </div>
                       </div>
                   </div>
-              </div>
-              `;
+              </div>`;
     }
 
     function showOtherLanguagesContent() {

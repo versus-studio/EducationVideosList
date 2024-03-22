@@ -285,7 +285,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .content .content-type>button {
@@ -420,9 +420,9 @@ main {
     transition: 0.2s ease;
 }
 
-.content .category .extraspace{
+/* .content .category .extraspace{
     padding: 0 10px;
-}
+} */
 
 .content .video-container .coming-up-text>h2 {
     display: flex;
@@ -450,7 +450,7 @@ main {
     width: 100%;
     height: max-content;
     gap: 30px;
-    margin: 20px 0;
+    padding: 20px;
 }
 
 .content .video-category>h2 {
@@ -624,6 +624,8 @@ footer .copyright p {
 
     .content .video-content-cont {
         flex-direction: column;
+        margin: 20px 0;
+        padding: 10px;
     }
 }
 
