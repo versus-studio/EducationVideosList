@@ -153,7 +153,7 @@ form.onchange = function (e) {
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ZSCwfggOKka14hTo&amp;list=PLv9Pf9aNgemv62NNC5bXLR0CzeaIj5bcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <div class="video-title">
                                 <h3>Appscript by <a class="credits" href="https://www.youtube.com/@excelGoogleSheets" target="_blank">Learn Google Sheets & Excel Spreadsheets</a></h3>
-                                <h3><a class="credits" href="https://www.youtube.com/playlist?list=PLv9Pf9aNgemv62NNC5bXLR0CzeaIj5bcw">Full Playlist Check from Here</a></h3>
+                                <h3><a class="credits" href="https://www.youtube.com/playlist?list=PLv9Pf9aNgemv62NNC5bXLR0CzeaIj5bcw" target="_blank">Full Playlist Check from Here</a></h3>
                             </div>
                         </div>
                     </div>
